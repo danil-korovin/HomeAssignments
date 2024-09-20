@@ -6,8 +6,8 @@
 
 #st128737@student.spbu.ru, kordanpav31@gmail.com
 
-#Сборка: Makefile
+#Сборка: make -f Makefile
 
-#Запуск: hello2
+#Запуск: ./hello2
 
 
