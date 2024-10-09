@@ -3,9 +3,12 @@
 */
 #ifndef myheader_h
 #define myheader_h
+#include <filesystem>
 #include <iostream>
 #include <fstream>
+#include <algorithm>
+#include <vector>
 
-void func(const std::string &s);
+void func();
 
 #endif
