@@ -4,9 +4,8 @@
 ## Contacts
 st128737@student.spbu.ru
 ## Description
-Home assingment 2 -  
-
+Home assingment 2a - Reading and writing binary files.
 ## Build
-make
+make -f Makefile
 ## Run 
-
+./main
