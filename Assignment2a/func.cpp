@@ -5,17 +5,17 @@
 void func()
 {
     std::ifstream infile;
-	infile.open("source.pdf",std::ios::binary|std::ios::in);
+	infile.open("source",std::ios::binary|std::ios::in);
 	
-	std::uintmax_t fileSize = std::filesystem::file_size("source.pdf");
+	std::size_t fileSize = std::filesystem::file_size("source");
 	
 	char* buffer = new char[fileSize];	
 		
 	std::ofstream outfile;
-	outfile.open("temppdf.pdf",std::ios::binary|std::ios::out);
-	infile.read((char *)&buffer,sizeof(buffer));
+	outfile.open("temppdf",std::ios::binary|std::ios::out);
+	infile.read(buffer, fileSize);
 	std::reverse(buffer, buffer + fileSize);
-	outfile.write((char *)&buffer,sizeof(buffer));
+	outfile.write(buffer, fileSize);
 		 
 	
 	infile.close();
