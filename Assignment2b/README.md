@@ -4,8 +4,8 @@
 ## Contacts
 st128737@student.spbu.ru
 ## Description
-Home assingment 2 -  
-
+Home assingment 2 - reverse writing with stack.
 ## Build
-make
+make -f Makefile
 ## Run 
+./main
