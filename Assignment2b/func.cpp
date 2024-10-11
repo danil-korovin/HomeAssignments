@@ -4,7 +4,7 @@
 #include "myheader.h"
 
 double func(const std::string &name) {
-	size_t size = 10;
+	size_t size = 1;
 	double *sp = new double[size];
 	size_t i = 0;
 	std::istringstream iss(name);
