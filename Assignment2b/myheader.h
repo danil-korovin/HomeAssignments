@@ -6,8 +6,8 @@
 
 #include <string>
 #include <iostream>
-#include <stack>
 #include <sstream>
-int func(const std::string &name);
+
+double func(const std::string &name);
 
 #endif
