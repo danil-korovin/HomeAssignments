@@ -7,7 +7,8 @@ int main() {
 	
     std::string in;
     std::getline(std::cin, in);
-    std::cout << func(in) << std::endl;
+	double ans = func(in);
+    std::cout << ans << std::endl;
 
     return 0;
 }
