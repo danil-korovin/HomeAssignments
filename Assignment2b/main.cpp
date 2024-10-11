@@ -5,10 +5,10 @@
 
 int main() {
 	
-    std::string in;
-    std::getline(std::cin, in);
+	std::string in;
+	std::getline(std::cin, in);
 	double ans = func(in);
-    std::cout << ans << std::endl;
-
-    return 0;
+	std::cout << ans << std::endl;
+	
+	return 0;
 }
