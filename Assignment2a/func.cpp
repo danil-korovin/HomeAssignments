@@ -14,7 +14,13 @@ void func()
 	std::ofstream outfile;
 	outfile.open("temppdf",std::ios::binary|std::ios::out);
 	infile.read(buffer, fileSize);
-	std::reverse(buffer, buffer + fileSize);
+	
+	for (int i = 0; i < fileSize /  2; ++i){
+		int a = buffer[i];
+		buffer[i] = buffer[fileSize - i - 1];
+		buffer[fileSize - i - 1] = a;
+	}
+	
 	outfile.write(buffer, fileSize);
 	
 	infile.close();
