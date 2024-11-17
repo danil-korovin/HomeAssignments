@@ -4,7 +4,7 @@
 ## Contacts
 st128737@student.spbu.ru
 ## Description
-Home assingment 3 - 
+Home assingment 3 - Transformers class hierarchy with get and set methods, association "weapons" and composition "heal".
 ## Build
 make -f Makefile
 ## Run 
