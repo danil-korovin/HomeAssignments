@@ -26,7 +26,7 @@ void Otherbots::move()
 }
 void Otherbots::jump()
 {
-    std::cout<<"Otherbot is moving!"<<'\n';
+    std::cout<<"Otherbot is jumping!"<<'\n';
     
 }
 void Otherbots::transform()
