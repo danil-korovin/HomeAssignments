@@ -1,14 +1,15 @@
 CXX = g++
+CXXFLAGS = -Wall -Wpedantic -Werror
 EXE = main
 OBJECTS = tests.o autobot.o decepticon.o otherbots.o transformer.o weapons.o
 
 all: $(EXE)
 
 $(EXE): $(OBJECTS)
-	$(CXX) $^ -lgtest -lpthread -o $@
+	$(CXX) $(CXXFLAGS) $^ -lgtest -lpthread -o $@
 
 %.o: %.cpp %.h
-	$(CXX) -c $<
+	$(CXX) $(CXXFLAGS) -c $<
 
 clean:
 	rm -f *.o $(EXE)
